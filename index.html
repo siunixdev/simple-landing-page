@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bacain - Simple API for Face Recognition</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="assets/styles/style.css" rel="stylesheet" />
+    <link href="assets/vendor/font-awesome/css/font-awesome.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="jumbotron">
+            <h1><i class="icon-list"></i> Baca.in</h1>
+            <p>An Simple API for face comparison</p>
+            <button class="button button-secondary">Start Now</button>
+            <p>
+                <a href="#">Already using Bacain ? try this service for free now</a>
+            </p>
+        </div>
+        <nav class="navbar">
+            <div class="menu">
+                <ul id="menu-list"></ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <article id="overview">
+                <div class="flex-container-row">
+                    <div class="flex-container-column column-left">
+                        <h2>Give high accuracy for face comparison</h2>
+                    </div>
+                    <div class="flex-container-column column-right">
+                        <h3>Overview</h3>
+                        <p>
+                            Embed facial recognition into your apps for a seamless and highly secured user experience.
+                            No machine learning expertise is required. Feature include: face detection for compare face
+                            to sample face, that easy to user you just send image url and we will
+                            compare it for you, you can use this API for attendance system to compare employee face with
+                            employee faces database
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="content content-light">
+            <article id="feature">
+                <div class="flex-container-row">
+                    <div class="flex-container-column column-left">
+                        <img class="image" src="assets/images/users.png" alt="" />
+                    </div>
+                    <div class="flex-container-column column-right">
+                        <h3>Easy to Use</h3>
+                        <p>
+                            Add facial recognition to your apps—all through a single API call
+                        </p>
+                        <div class="terminal">
+                            <p>
+                                <kbd>POST http://127.0.0.1:5000/api/v1/face-recognition</kbd>
+                            </p>
+                            <p>
+                                <kbd>Content-Type: application/json</kbd>
+                            </p>
+                            <p><kbd>{</kbd></p>
+                            <p class="tab">
+                                <kbd>"useId" : "BPP-2000-000001",</kbd>
+                            </p>
+                            <p class="tab">
+                                <kbd>"defaultImage" :
+                                    "default_image_url",</kbd>
+                            </p>
+                            <p class="tab">
+                                <kbd>"unknownImage" :
+                                    "unknown_image_url",</kbd>
+                            </p>
+                            <p class="tab"><kbd>"clientKey" : "code2"</kbd></p>
+                            <p><kbd>}</kbd></p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <aside>
+            <h2>Our Team</h2>
+            <img src="assets/images/profile.jpg" alt="Abdillah F" class="profile-image" />
+            <h4>Abdillah F.</h4>
+            <p><i class="icon-envelope-alt"></i> abd.siunix@gmail.com</p>
+            <p>Polewali Mandar</p>
+        </aside>
+    </main>
+    <footer class="footer">Copyright &copy 2020 Abdillah F.</footer>
+    <script src="assets/scripts/main.js"></script>
+</body>
+
+</html>
